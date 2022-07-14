@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<!--<nav>
+    <li class="option1" href="#">option1</li>
+    <li class="option2" href="#">option2</li>
+    <li class="option3" href="#">option3</li>
+    <li class="option4" href="#">option4</li>
+
+</nav>-->
+<nav>
+    <div id="container">
+    <div class="container-one">
+<div class="hamburger-layer"></div>
+<div class="hamburger-layer"></div>
+<div class="hamburger-layer"></div>
+    </div>
+    <div class="container-two">
+
+        <img src="#" alt="logo" class="hamburger-img">
+        <p class="img-text">Candle Light</p>
+    </div>
+
+    </div>
+</nav>
+<main>
+    <div id="text-container">
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae commodi consectetur dolore dolores dolorum ducimus earum enim esse eveniet explicabo facilis laboriosam libero nesciunt nisi non praesentium, similique voluptas.</h1>
+    <p></p>
+    </div>
+
+
+    <section>
+        <div class="container fadein">
+            <h2>Caption</h2>
+            <div class="text-container">
+                <div class="text-box">
+                    <h3>Software Developer</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>U.S.M.C <br> (Veteran)</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Medical Assistant</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container fadein">
+            <h2>Caption</h2>
+            <div class="text-container">
+                <div class="text-box">
+                    <h3>Network Systems <br>Admin</h3>
+                    <li>Shell Navigation</li>
+                    <li>Virtual Machines</li>
+                    <li>IP Address Configuration</li>
+                </div>
+                <div class="text-box">
+                    <h3>Cisco Switch Operator</h3>
+                    <p>
+                        Learning the REDCOM SLICE 2100 as a first Voip switch  consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Soft Skills</h3>
+                        <p>Crimping Cables:</p>
+                    <li>Cat 5 to RJ-45</li>
+                    <li>Cat 3 to RJ-15</li>
+                    <li>OSI Model</li>
+                    <li>Subnetting</li>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!--TEST -->
+    <section>
+        <div class="container fadein">
+            <h2>Caption</h2>
+            <div class="text-container">
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+                <div class="text-box">
+                    <h3>Section Text</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                        eius molestiae perferendis eos provident vitae iste.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TEST END-->
+</main>
+<script>
+
+    function scroll() {
+       /*targets CLASS to manipulate */
+        var fadein = document.querySelectorAll(".fadein");
+
+        for (var i = 0; i < fadein.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = fadein[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                fadein[i].classList.add("active");
+            } else {
+                fadein[i].classList.remove("active");
+            }
+        }
+    }
+
+    window.addEventListener("scroll", scroll);
+</script>
+</body>
+</html>

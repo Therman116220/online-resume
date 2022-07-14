@@ -1,0 +1,137 @@
+body {
+  /*  margin: 5px;*/
+    background-color: black;
+}
+/*
+nav {
+    display: flex;
+    position: fixed;
+    margin-top: 0;
+}
+
+nav li {
+    flex-direction: row;
+    color: whitesmoke;
+    text-decoration: none;
+}*/
+
+.hamburger-layer {
+   /* width:70px;
+    height: 10px;*/
+    background-color: whitesmoke;
+    margin: 6px 0;
+    width: 80px;
+    height: 4px;
+    padding-top: 4px;
+    border-radius: 5px;
+}
+
+#container {
+display: flex;
+    margin: 4vh 0 0 7vw
+ }
+ .container-one .container-two {
+     flex-direction: row;
+ }
+
+.container-two {
+    margin-left: 18px;
+    width: 18vw;
+    height: 3.2vh;
+    background-color: cornflowerblue;
+}
+.img-text {
+    font-size: 20px;
+    margin: 0px 30px;
+    color: whitesmoke;
+}
+
+.hamburger-img {
+    width: 5px;
+    height: 10px;
+
+}
+
+/*Statement*/
+#text-container {
+    margin: 40vh 0 0 4vw;
+}
+h1 {
+    color: whitesmoke;
+}
+
+
+
+
+
+/*TEST*/
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(1){
+    color: #e0ffff;
+}
+section:nth-child(2){
+    color: #42455a;
+    background: #e0ffff;
+}
+section:nth-child(3){
+    color: #e0ffff;
+}
+section:nth-child(4){
+    color: #42455a;
+    background: #e0ffff;
+}
+section .container{
+    margin: 100px;
+}
+section h1{
+    font-size: 3rem;
+    margin: 20px;
+}
+section h2{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+section .text-container{
+    display: flex;
+}
+section .text-container .text-box{
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(100deg, rgba(203, 24, 24, 0.8) 0%, rgb(54, 120, 176) 25%)
+}
+section .text-container .text-box h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+    section h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    section .text-container{
+        flex-direction: column;
+    }
+}
+
+.fadein{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.fadein.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/*TEST END*/
