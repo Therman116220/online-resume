@@ -157,5 +157,5 @@ section .text-container .text-box h3{
 .btn:hover {
     background-color: purple;
     transition: ease-in-out 2s;
-    transform: scale(2.2);
+    transform: scale(1.2);
 }
